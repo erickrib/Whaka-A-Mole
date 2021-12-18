@@ -8,19 +8,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
+    background-color: green;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.principal {
     background-image: url(background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: color;
+    height: 90.5vh;
+    overflow: hidden;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.menu{
+.menu {
     background-color: #fffafa;
     padding: 10px 20px;
     display: flex;
@@ -29,38 +37,40 @@ img{
     border-bottom: 1px solid rgb(163, 163, 163);
 }
 
-.menu h1{
+.menu h1 {
     color: rgb(248, 190, 0);
 }
 
-.score, .modal-button{
+.score,
+.modal-button {
     border: 1px solid rgba(255, 123, 0, 0.397);
     padding: 10px 15px;
     border-radius: 50px;
     background-color: rgb(248, 190, 0);
-    color:#fffafa; 
+    color: #fffafa;
     font-weight: 600;
 }
 
-.hole-main{
+.hole-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 700px;
-    margin: 130px auto 0;
-
+    margin: 0px auto;
+    padding-top: 140px;
 }
 
-.hole{
+.hole {
     width: 150px;
+    height: 114.113px;
     margin: 0 auto;
-    
+    user-select: none; 
 }
 
-.modal{
+.modal {
     text-align: center;
     max-width: 700px;
     margin: 100px auto;
-    background-color:#fffafa;
+    background-color: #fffafa;
     border-radius: 20px;
     display: none;
     height: 80vh;
@@ -70,27 +80,94 @@ img{
     bottom: 0;
     left: 0;
     animation: go-back 1s;
+    z-index: 3;
 }
+
 @keyframes go-back {
     0% {
         transform: translateY(-500px);
     }
+
     100% {
         transform: translateY(0px);
     }
 }
-.modal h2{
+
+.modal h2 {
     color: rgb(248, 190, 0);
     font-size: 3rem;
     position: relative;
     bottom: 60px;
 }
 
-.modal-img{
+.modal-img {
     margin: 30px auto 0;
     width: 250px;
 }
 
-.modal-button{
+.modal-button {
     margin-top: 40px;
+}
+
+.cursor img {
+    display: none;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+    transform: translate(-10px, -40px);
+    pointer-events: none;
+    user-select: none; 
+}
+
+@keyframes hit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-30deg);
+    }
+}
+
+.mole- {
+    display: block;
+    width: 70px;
+    z-index: 1;
+    height: 100%;
+    animation: apper 0.4s linear;
+    pointer-events: none;
+}
+
+@keyframes apper {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.hole-img {
+    position: relative;
+    left: 30%;
+    bottom: 115%;
+    overflow: hidden;
+    height: 70px;
+}
+
+.stop-button {
+    display: none;
+    width: 80px;
+    position: absolute;
+    bottom: 10%;
+    left: 47%;
+    box-shadow: 0px 0px 5px rgb(78 78 78 / 62%);
+    color: #5C4033;
+    user-select: none; 
+}
+
+.stop-button:active{
+    transform: scale(0.7);
+    transition: all .2s ease-in-out
 }
