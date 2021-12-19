@@ -1,10 +1,10 @@
 const mode = document.querySelector('.modal')
-const cursor = document.querySelector(".cursor img");
-// const mole = document.querySelector(".mole-")
+const cursor = document.querySelector(".cursor img")
 const principal = document.querySelector(".principal")
 const cabecalho = document.querySelector(".menu")
 const holes = document.querySelectorAll(".hole-img")
 const stopbtn = document.querySelector(".stop-button")
+
 addEventListener("load", () => setTimeout(() =>
     mode.style.display = "block", 500))
 
@@ -12,7 +12,6 @@ start.addEventListener("click", () => {
     mode.style.display = "none"
     principal.style.backgroundBlendMode = "initial"
     cursor.style.display = "block"
-    // mole.style.display = "block"
     stopbtn.style.display = "block"
     addEventListener("mousemove", (e) => {
         cursor.style.top = e.pageY + "px"
@@ -32,6 +31,7 @@ start.addEventListener("click", () => {
       })
 
     let hole
+    let points = 0
     const startGame = setInterval(() => {
         let arrayNo = Math.floor(Math.random() * 9)
         hole = holes[arrayNo]
@@ -43,8 +43,15 @@ start.addEventListener("click", () => {
 
         setTimeout(() => {
             hole.removeChild(image)
-        },600)
-    }, 700)
+        }
+        ,1900)
+    }, 2000)
+    let score = document.querySelector(".numbers")
+    addEventListener("click", (e) => {
+        if (e.target === hole) {
+        score.innerText = ++points
+        }
+        })
     stopbtn.addEventListener("mouseover", () => cursor.style.display = "none")
     stopbtn.addEventListener("click", () => clearInterval(startGame)
     )

@@ -133,9 +133,10 @@ img {
     display: block;
     width: 70px;
     z-index: 1;
-    height: 100%;
+    height: 70px;
     animation: apper 0.4s linear;
     pointer-events: none;
+    margin: 40px auto;
 }
 
 @keyframes apper {
@@ -150,10 +151,11 @@ img {
 
 .hole-img {
     position: relative;
-    left: 30%;
-    bottom: 115%;
+    bottom: 150%;
     overflow: hidden;
-    height: 70px;
+    margin: 0 auto;
+    height: 110px;
+    width: 90px;
 }
 
 .stop-button {
