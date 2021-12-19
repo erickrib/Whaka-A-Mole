@@ -17,11 +17,6 @@ start.addEventListener("click", () => {
     cursor.style.display = "block"
     stopbtn.style.display = "block"
 
-    var duration = 60 * 2
-    var display = document.querySelector(".timer-number")
-
-    startTimer(duration, display)
-
     addEventListener("mousemove", (e) => {
         cursor.style.top = e.pageY + "px"
         cursor.style.left = e.pageX + "px"
@@ -89,20 +84,19 @@ start.addEventListener("click", () => {
         }
     })
 
+    var duration = 60 * 2
+    var display = document.querySelector(".timer-number")
+
+    startTimer(duration, display)
     function startTimer(duration, display) {
         display.style.display = "block"
-        let timer = duration,
-            minutes, seconds
-
+        let timer = duration, minutes, seconds
+        let pause = 1
         const timercont = setInterval(function () {
-            minutes = parseInt(timer / 60, 10)
+            if (pause == 1) {minutes = parseInt(timer / 60, 10)
             seconds = parseInt(timer % 60, 10)
-
             minutes = minutes < 10 ? "0" + minutes : minutes
             seconds = seconds < 10 ? "0" + seconds : seconds
-
-            display.innerText = minutes + ":" + seconds
-
             if (--timer < -1) {
                 timer = duration
             }
@@ -112,11 +106,22 @@ start.addEventListener("click", () => {
                 clearInterval(timercont)
                 score.innerText = 0
             }
+        }
 
+            display.innerText = minutes + ":" + seconds
+            
+            stopbtn.addEventListener("click", () => {
+                pause = 0
+             })
+
+             returnbtn.addEventListener("click", () => {
+               pause = 1
+            })
         }, 1000);
+
         finishbtn.addEventListener("click", () => {
             clearInterval(timercont)
-            display.style.display = "none"
+            location.reload();
         })
     }
 
