@@ -42,7 +42,7 @@ start.addEventListener("click", () => {
         hole = holes[arrayNo]
 
         let image = document.createElement("img")
-        image.setAttribute("src", "mole.png")
+        image.setAttribute("src", "img/mole.png")
         image.setAttribute("class", "mole-")
         hole.appendChild(image)
 
