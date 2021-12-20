@@ -1,7 +1,6 @@
 const mode = document.querySelector('.modal')
 const cursor = document.querySelector(".cursor img")
-const principal = document.querySelector(".principal")
-const cabecalho = document.querySelector(".menu")
+const main = document.querySelector(".main")
 const holes = document.querySelectorAll(".hole-img")
 const stopbtn = document.querySelector(".stop-button")
 const returnbtn = document.querySelector(".return")
@@ -13,17 +12,17 @@ addEventListener("load", () => setTimeout(() =>
 
 start.addEventListener("click", () => {
     mode.style.display = "none"
-    principal.style.backgroundBlendMode = "initial"
+    main.style.backgroundBlendMode = "initial"
     cursor.style.display = "block"
     stopbtn.style.display = "block"
 
     addEventListener("mousemove", (e) => {
         cursor.style.top = e.pageY + "px"
         cursor.style.left = e.pageX + "px"
-        principal.addEventListener("mouseover", () => {
+        main.addEventListener("mouseover", () => {
             cursor.style.display = "block"
         })
-        principal.addEventListener("mouseleave", () => {
+        main.addEventListener("mouseleave", () => {
             cursor.style.display = "none"
         })
 
@@ -49,7 +48,7 @@ start.addEventListener("click", () => {
 
         setTimeout(() => {
             hole.removeChild(image)
-        }, 1900)
+        }, 850)
 
         stopbtn.addEventListener("mouseover", () => cursor.style.display = "none")
         stopbtn.addEventListener("click", () => {
@@ -76,7 +75,7 @@ start.addEventListener("click", () => {
             score.innerText = 0
         })
 
-    }, 2000)
+    }, 950)
 
     addEventListener("click", (e) => {
         if (e.target === hole) {
@@ -86,8 +85,8 @@ start.addEventListener("click", () => {
 
     var duration = 60 * 2
     var display = document.querySelector(".timer-number")
-
     startTimer(duration, display)
+
     function startTimer(duration, display) {
         display.style.display = "block"
         let timer = duration, minutes, seconds
@@ -97,14 +96,18 @@ start.addEventListener("click", () => {
             seconds = parseInt(timer % 60, 10)
             minutes = minutes < 10 ? "0" + minutes : minutes
             seconds = seconds < 10 ? "0" + seconds : seconds
+
             if (--timer < -1) {
                 timer = duration
             }
-            if (timer == -1) {
 
+            if (timer == -1) {
                 clearInterval(startGame)
                 clearInterval(timercont)
                 score.innerText = 0
+                stopbtn.style.display = "none"
+                finishbtn.style.left = "47.4%"
+                finishbtn.style.display = "block"
             }
         }
 
@@ -124,7 +127,4 @@ start.addEventListener("click", () => {
             location.reload();
         })
     }
-
-
-
 })
