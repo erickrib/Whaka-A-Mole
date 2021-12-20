@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-    background: rgba(0, 0, 0, 0.6) url(background.png) no-repeat;
+    background: rgba(0, 0, 0, 0.6) url(../img/background.png) no-repeat;
     background-size: cover;
     background-blend-mode: color;
     height: 90.5vh;
