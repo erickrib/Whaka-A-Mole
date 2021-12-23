@@ -51,7 +51,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <div>
 <img  src="./.github/game-whaka-a-mole.gif" width="500px">
 </div>
-<p>Você pode visualizar o projeto a partir desse <a href="">link</a>.
+<p>Você pode testar o projeto a partir desse <a href="">link</a>.
 
 ## Rodando o projeto 🚴🏻‍♂️
 
