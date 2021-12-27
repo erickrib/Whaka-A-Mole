@@ -3,7 +3,7 @@
 </h1>
 <p align="center">
     <img alt="Plataforma" src="https://img.shields.io/static/v1?label=Plataforma&message=PC&color=f8be00&labelColor=f1ce58">
-    <img alt="Versão" src="https://img.shields.io/static/v1?label=Versão&message=1.1&color=f8be00&labelColor=f1ce58">
+    <img alt ="Versão" src="https://img.shields.io/static/v1?label=Vers%C3%A3o&message=1.1&color=f8be00&labelColor=f1ce58">
     <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/erickrib/Whaka-A-Mole?color=f8be00&labelColor=f1ce58">
     <a href="https://github.com/NyctibiusVII/Dev.Finances/blob/master/LICENSE">
         <img alt="Licença" src="https://img.shields.io/static/v1?label=License&message=MIT&color=f8be00&labelColor=f1ce58">
