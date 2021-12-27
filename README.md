@@ -66,5 +66,5 @@ $ cd Whaka-A-Mole
 # Abra o projeto com o navegador de sua preferência
 $ index.html
 ```
-# Licença
+## Licença
 Este projeto está sob a licença do MIT. Veja o arquivo [LICENSE](https://github.com/erickrib/Whaka-A-Mole/blob/main/LICENSE) para mais detalhes.
