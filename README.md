@@ -10,10 +10,10 @@
     </a>
 </p>
 <p align="center">
-    <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-licença-%EF%B8%8F">Licença</a>
+    <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#licença">Licença</a>
 </p>
 
 <hr>
@@ -31,14 +31,14 @@
 * Cursor personalizado; e
 * Finalizar jogo; 
 
-## Tecnologias 🚀
+## Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Html](https://pt.wikipedia.org/wiki/HTML)
 - [Css](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [Javascript](https://pt.wikipedia.org/wiki/JavaScript)
 
-## Layout 💡
+## Layout
 #### Desktop Screenshot
 <div style="display: flex; flex-direction: 'column'; align-items: 'center';">
 <!-- Responsive, 1440 x 900, 50% (Laptop L - 1440px)-->
@@ -53,7 +53,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 </div>
 <p>Você pode testar o projeto a partir desse <a href="">link</a>.
 
-## Rodando o projeto 🚴🏻‍♂️
+## Rodando o projeto
 
 ```bash
 
@@ -66,5 +66,5 @@ $ cd Whaka-A-Mole
 # Abra o projeto com o navegador de sua preferência
 $ index.html
 ```
-## Licença ⚖️
+# Licença
 Este projeto está sob a licença do MIT. Veja o arquivo [LICENSE](https://github.com/erickrib/Whaka-A-Mole/blob/main/LICENSE) para mais detalhes.
