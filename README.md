@@ -29,7 +29,7 @@
 * É possivel pausar o jogo e o temporizador;
 * Após pausar é possível retornar ao jogo sem perder a pontuação;
 * Cursor personalizado; e
-* Finalizar jogo; 
+* Finalizar jogo. 
 
 ## Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
