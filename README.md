@@ -21,7 +21,7 @@
 ### Projeto
 <p>O Projeto desenvolvido é um jogo simples de Pegue a Toupeira. Nesse jogo o objetivo e testar a sua rapidez e habilidade na pontaria. Ao acertar a toupeira, que surgirá em buracos aleatórios, o jogador ganha pontos.</p>
 <p> O intuito foi pôr em prática os conceitos de HTML5, CSS3 e JS.</p>
-<p><em>Obs: o jogo está disponível apenas para desktop, em telas menores poderá apresentar inconsistência no layout</em></p>
+<p><em>Obs: o jogo está disponível apenas para desktop, em telas menores poderá apresentar inconsistência no layout.</em></p>
 
 ### Funcionalidades
 * Temporizador de contagem regressiva;
